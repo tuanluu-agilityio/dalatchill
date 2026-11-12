@@ -1,0 +1,9 @@
+# Static site: publish only what the page needs (no docs, tests or tools).
+[build]
+  command = "mkdir -p dist && cp -r index.html photo.html css src src3d vendor assets CREDITS.md dist/"
+  publish = "dist"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

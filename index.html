@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dalat Chill</title>
+  <meta name="description" content="Một giây phút để chill giữa khu vườn Đà Lạt.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="scene" aria-label="Khu vườn 3D: căn nhà gỗ bên hồ cá koi giữa rừng thông Đà Lạt"></canvas>
+  <div id="fallback" hidden>
+    <img src="assets/scene.png" alt="Căn nhà gỗ bên hồ cá koi giữa rừng thông Đà Lạt">
+    <p>Trình duyệt không hỗ trợ hiệu ứng, đang hiển thị ảnh tĩnh.</p>
+  </div>
+  <div id="ui"></div>
+  <div id="loader"><span>Dalat Chill</span></div>
+  <script type="importmap">{ "imports": { "three": "./vendor/three.module.js" } }</script>
+  <script type="module" src="src3d/main3d.js"></script>
+</body>
+</html>
